@@ -1,0 +1,12 @@
+<div *ngFor="let categoria of categorias">
+    <h4>{{categoria.nombreCategoria}}</h4>
+    <div class="contenedorCateogria">
+        <div class="contenedorLibros" *ngFor="let libro of categoria.libros">
+            <h5>{{libro.titulo}}</h5>
+            <h6>{{libro.autor}}</h6>
+            <h6>{{libro.fechaPublicacion}}</h6>
+            <img [src]="libro.imagen" [alt]="libro.titulo" routerLink="/detalleLibro/{{libro._id}}">
+        </div>
+    </div>
+    <hr>
+</div>

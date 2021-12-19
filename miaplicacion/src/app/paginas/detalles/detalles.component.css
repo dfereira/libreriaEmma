@@ -1,0 +1,15 @@
+.contenedorDetalles{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.panelResena{
+    margin: 50px;
+}
+
+.panelResena p {
+    max-width: 800px;
+}

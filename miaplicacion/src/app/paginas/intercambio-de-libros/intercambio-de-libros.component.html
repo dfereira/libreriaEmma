@@ -1,0 +1,15 @@
+<br>
+<h2>Intercambio de Libros</h2>
+
+<p>Es una iniciativa que nace en el 2001, basicamente consiste en un CLUB DE LIBROS que atraviesa el tiempo y el espacio, cuya meta es convertir el mundo en una biblioteca global. Bajo este contexto queremos que con esta iniciativa, la ciudad de Bogota sea una ciudad donde leer sea uno de sus atractivos.</p>
+<p>Selecciomma el libro que deseas leer, llena nuestro formulario y los colaboradores de la Libreria de Emma, estaran contactandote. Recuerda que nuestro unico requisito es recibir un libro a cambio en buenas condiciones y seguir ampliando las opciones de lectura para todos los usuarios. Puedes realizar la solicitud de intercambio las veces que lo desees </p>
+<div class="cuerpo">
+    <div class="contenedorLibros" *ngFor="let libro of listaLibros">
+        <h4>{{libro.titulo}}</h4>
+        <h6>{{libro.autor}}</h6>
+        <h6>{{libro.fechaPublicacion}}</h6>
+        <img [src]="libro.imagen" [alt]="libro.titulo" routerLink="/solicitarLibro/{{libro._id}}">
+        <br>
+        <button class="btn btn-success" routerLink="/solicitarLibro/{{libro._id}}">Solicitar</button>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<h4 style="background-color: #bef3f5; margin: 0;">Top 5 de la semana</h4>
+
+<div id="topLibrosCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div *ngFor="let libro of topLibros" [class]="{'carousel-item': true, 'active': libro.active}">
+      <img class="d-block w-100 imagenLibroTop" [src]="libro.imagen" [alt]="libro.titulo" routerLink="/detalleLibro/{{libro._id}}"> 
+      {{libro.titulo}}
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#topLibrosCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#topLibrosCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

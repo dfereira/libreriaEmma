@@ -1,0 +1,19 @@
+h4{
+    text-align: center;
+}
+
+.imagenLibroTop{
+    height: 300px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#topLibrosCarousel{
+    background-color: rgba(92, 225, 230, 0.4);
+}

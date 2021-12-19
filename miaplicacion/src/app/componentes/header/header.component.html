@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" routerLink="/">INICIO</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/categorias">CATEGORIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/intercambio-de-libros">INTERCAMBIO DE LIBROS</a>
+          </li><li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/club-de-lectura">CLUB DE LECTURA</a>
+          <!-- </li><li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/novedades">NOVEDADES</a>
+          </li> -->
+          <li class="nav-item" *ngIf="esAdministrador">
+            <a class="nav-link active" aria-current="page" routerLink="/administracion">ADMINISTRACIÓN</a>
+          </li>
+        </ul>
+        <a href="*" (click)="cerrarSesion()" style="position: absolute; right: 10px">Cerrar Sesión</a>
+      </div>
+    </div>
+  </nav>

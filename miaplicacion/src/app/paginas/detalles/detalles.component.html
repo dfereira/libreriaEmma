@@ -1,0 +1,12 @@
+<div class="contenedorDetalles">
+    <div class="panelDetalles">
+        <h4>{{libro.titulo}}</h4>
+        <h5>{{libro.autor}}</h5>
+        <h6>{{libro.fechaPublicacion}}</h6>
+        <img [src]="libro.imagen">
+    </div>
+    <div class="panelResena">
+        <h4>Reseña</h4>
+        <p>{{libro["reseña"]}}</p>
+    </div>
+</div>

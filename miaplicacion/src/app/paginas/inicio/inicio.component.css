@@ -1,0 +1,38 @@
+.imagenSeccion img{
+    height: 200px;
+    max-width: 200px;
+}
+
+.imagenSeccion{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.novedades{
+    display: flex;
+    justify-content: center;
+    background-color: #bef3f5;
+}
+
+.novedades img{
+    border-radius: 30px;
+}
+
+.novedades a{
+    color: black;
+}
+
+.introduccion{
+    background-color: #bef3f5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.introduccion p{
+    margin: 0;
+}

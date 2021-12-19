@@ -1,0 +1,46 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Dirección</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of usuarios">
+            <td>
+                <span *ngIf="!usuario.estaEditando">
+                    {{usuario.usuario}}
+                </span>
+                <input *ngIf="usuario.estaEditando" type="text" [(ngModel)]="usuario.usuario">
+            </td>
+            <td>
+                <span *ngIf="!usuario.estaEditando">
+                    {{usuario.nombre}}
+                </span>
+                <input *ngIf="usuario.estaEditando" type="text" [(ngModel)]="usuario.nombre">
+            </td>
+            <td>
+                <span *ngIf="!usuario.estaEditando">
+                    {{usuario.correo}}
+                </span>
+                <input *ngIf="usuario.estaEditando" type="text" [(ngModel)]="usuario.correo">
+            </td>
+            <td>
+                <span *ngIf="!usuario.estaEditando">
+                    {{usuario.direccion}}
+                </span>
+                <input *ngIf="usuario.estaEditando" type="text" [(ngModel)]="usuario.direccion">
+            </td>
+            <td>
+                <button *ngIf="!usuario.estaEditando" class="btn btn-info" (click)="editarUsuario(usuario)">Editar</button>
+                <button *ngIf="usuario.estaEditando" class="btn btn-success" (click)="aceptarEdicion(usuario)">✔</button>
+                <button *ngIf="usuario.estaEditando" class="btn btn-warning" (click)="editarUsuario(usuario)">❌</button>
+            </td>
+            <td><button class="btn btn-danger" (click)="borrarUsuario(usuario._id)">Borrar</button></td>
+        </tr>
+    </tbody>
+</table>

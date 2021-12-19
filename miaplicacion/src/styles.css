@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+.contenedorLibros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px 0px;
+}
+
+.contenedorLibros img{
+    height: 300px;
+    max-width: 200px;
+    cursor: pointer;
+    border-radius: 15px;
+    align-self: center;
+    transition:  0.5s;
+}
+
+.contenedorLibros img:hover{
+    transform: scale(120%);
+    transition: transform 0.5s;
+}

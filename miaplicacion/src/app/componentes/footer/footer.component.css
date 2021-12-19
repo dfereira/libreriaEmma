@@ -1,0 +1,17 @@
+footer{
+    background-color: rgb(92 225 230)
+}
+
+.footer-logo{
+    height: 145px;
+    margin: auto;
+}
+
+.logo-container{
+    display: flex;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,14 @@
+<div class="contenedorSolicitud">
+    <label for="nombreUsuario">Nombre</label>
+    <input type="text" id="nombreUsuario" [(ngModel)]="usuarioActual.nombre">
+    <div class="contenedorLibro">
+        <label>Libro a solicitar</label>
+        <img src="{{libroASolicitar.imagen}}" alt="">
+    </div>
+    <!-- <input type="text" id="libroASolicitar" disabled [value]="libroASolicitar.idLibro"> -->
+    <label for="direccion">Dirección</label>
+    <input type="text" id="direccion" [(ngModel)]="usuarioActual.direccion">
+    <label for="correo">Correo</label>
+    <input type="text" id="correo" [(ngModel)]="usuarioActual.correo">
+    <button class="btn btn-success" (click)="solicitarLibro()">Solicitar</button>
+</div>

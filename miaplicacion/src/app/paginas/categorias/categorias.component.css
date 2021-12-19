@@ -1,0 +1,11 @@
+.contenedorCateogria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px 10px;
+}
+
+h4{
+    text-align: center;
+    margin: 50px 0 10px 0;
+}

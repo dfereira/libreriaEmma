@@ -1,0 +1,21 @@
+.contenedorSolicitud {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.contenedorSolicitud label, button{
+    margin-top: 15px;
+    font-weight: 600;
+}
+.contenedorLibro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contenedorLibro img{
+    max-width: 200px;
+}

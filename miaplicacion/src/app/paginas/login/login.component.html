@@ -1,0 +1,15 @@
+<div class="loginForm">
+    <p>Registrate y se parte de nuestro Club de lectura, y participa en nuestros intercambios de libros</p>
+    <img src="/assets/logo.png" alt="">
+    <div>
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text" [(ngModel)]="usuario" (keydown.enter)="iniciarSesion()">
+    </div>
+    <div>
+        <label for="password">Contraseña</label>
+        <input id="password" type="password" [(ngModel)]="password" (keydown.enter)="iniciarSesion()">
+    </div>
+    <label class="textoValidacion">{{textoValidacion}}</label>
+    <button class="btn btn-info" (click)="iniciarSesion()">Iniciar Sesión</button>
+    <a href="*" routerLink="/registrarUsuario">¿No tienes usuario? Regístrate</a>
+</div>
